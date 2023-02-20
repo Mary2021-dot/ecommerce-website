@@ -1,0 +1,377 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="{% static 'myapp/css/index.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container mr-auto">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    
+    <img src="{% static 'myapp/images/2.jpeg' %}" style="width:100%">
+    <div class="text">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat distinctio incidunt deserunt ut molestias, blanditiis aspernatur dolore, quae culpa optio quas! Aliquam quidem mollitia alias, et natus ratione tempore ducimus!</P>
+    </div>
+    <div class="slide-btn">
+      <button> 
+        <a href="">Get Started</a></button>
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="{% static 'myapp/images/4.jpeg' %}" style="width:100%">
+    <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deserunt labore sunt quisquam facere! Id ut sequi enim eius, fuga molestiae delectus nesciunt ipsam libero amet mollitia incidunt unde labore!</p>
+    </div>
+    <div class="slide-btn">
+      <button> 
+        <a href="">Order Now!!</a></button>
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="{% static 'myapp/images/3.jpeg' %}" style="width:100%">
+    <div class="text">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus perferendis nemo porro eveniet ea velit dolorem tenetur doloremque officia itaque suscipit ducimus aliquid molestiae quos, autem, voluptatem pariatur officiis.</P>
+    </div>
+    <div class="slide-btn">
+      <button> 
+        <a href="">Learn More</a></button>
+    </div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+
+  <div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="{% static 'myapp/images/images.jpeg' %}" alt="">
+        </div>
+        <div class="col-3">
+            <img src="{% static 'myapp/images/2.jpeg' %}" alt="">
+        </div>
+        <div class="col-3">
+            <img src="{% static 'myapp/images/3.jpeg' %}" alt="">
+        </div>
+    </div>
+</div>
+</div>
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+      <div class="col-4">
+          <img src="{% static 'myapp/images/3.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/4.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/5.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      
+  </div>
+
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+      <div class="col-4">
+          <img src="{% static 'myapp/images/3.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/4.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/3.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/2.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/6.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      <div class="col-4">
+          <img src="{% static 'myapp/images/images.jpeg' %}" alt="">
+          <h4>Red printed T-shirt</h4>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+
+          </div>
+          <p>$ 50.00</p>
+      </div>
+      
+  </div>
+</div>
+
+<div class="small-container">
+  <div class="row">
+      <div class="col-2">
+          <img src="{% static 'myapp/images/watch.jpeg' %}" alt=""class=offer-img>
+      </div>
+      <div class="col-2">
+          <p>Exclusively Available on Redstore</p>
+          <h1>Smart band 4</h1>
+          <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, odio aut doloremque quam, odit incidunt numquam distinctio reiciendis quibusdam id quidem minima. Fugiat mollitia ipsa reprehenderit ipsum quae nisi laborum. <br></small>
+          <a href=""class="btn">Buy Now &#8594;</a>
+      </div>
+  </div>
+</div>
+</div>
+
+<!----Testimonials-->
+<div class="testimonials">
+<div class="small-container">
+  <div class="row">
+      <div class="col-3">
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla necessitatibus deserunt ratione nisi voluptatem similique! Cum cumque est neque. Ratione voluptas fuga possimus quia consequuntur? Quia quaerat placeat similique.</p>
+      <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+
+      </div>
+      <img src="{% static 'myapp/images/images.jpeg' %}" alt="">
+      <h3>Sean Parker</h3>
+  </div>
+  <div class="col-3">
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla necessitatibus deserunt ratione nisi voluptatem similique! Cum cumque est neque. Ratione voluptas fuga possimus quia consequuntur? Quia quaerat placeat similique.</p>
+  <div class="rating">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+
+  </div>
+  <img src="{% static 'myapp/images/3.jpeg' %}" alt="">
+  <h3>Sean Parker</h3>
+</div>
+<div class="col-3">
+  <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla necessitatibus deserunt ratione nisi voluptatem similique! Cum cumque est neque. Ratione voluptas fuga possimus quia consequuntur? Quia quaerat placeat similique.</p>
+<div class="rating">
+  <i class="fa fa-star" aria-hidden="true"></i>
+  <i class="fa fa-star" aria-hidden="true"></i>
+  <i class="fa fa-star" aria-hidden="true"></i>
+  <i class="fa fa-star" aria-hidden="true"></i>
+  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+</div>
+<img src="{% static 'myapp/images/5.jpeg' %}" alt="">
+<h3>Sean Parker</h3>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+              <h3>Download Our Appp</h3>
+              <p>Download App for androi and ios mobile phone</p>
+              <div class="app-logo">
+                  <img src="{% static 'myapp/images/gg.png' %}" alt="">
+                  <img src="{% static 'myapp/images/apps.png' %}" alt="">
+              </div>
+          </div>
+          <div class="footer-col-2">
+             <img src="{% static 'myapp/images/logo5.png' %}" alt="">
+              <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to Many</p>
+          </div>
+          <div class="footer-col-3">
+              <h3>Useful links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </div>
+          <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Telegram</li>
+                  <li>Instagram</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <p class="copyright">Copyright 2023|| @Marilyne Nelima</p>
+</div>
+</div>
+
+</body>
+</html>
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+  
+
+</body>
+</html>
